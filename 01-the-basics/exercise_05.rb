@@ -14,10 +14,4 @@ def factorial(num)
   return acc
 end
 
-def factorial_recursive(acc, num = acc)
-  return factorial_recursive((acc * (num - 1)), (num - 1)) if num > 1
-  return acc unless num > 1
-end
-
-#[5,6,7,8].each { |number| puts factorial(number) }
-[5,6,7,8].each { |number| puts factorial_recursive(number) }
+[5, 6, 7, 8, 100_000].each { |number| puts factorial(number) }
