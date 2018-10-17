@@ -6,3 +6,4 @@
 * Default parameters: can be assigned in case the method call does not send in any arguments.
 * Mutating the caller: when we alter the argument in a method invocation permanently. 
 * Returns:  every method implicitly returns the result of the evaulation of the last expression that is executed (unless an explicit return comes before it).
+* 
