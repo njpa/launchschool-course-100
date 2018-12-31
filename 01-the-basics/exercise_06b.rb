@@ -2,8 +2,10 @@
 # =====================
 # Write a program that calculates the square roots of 3 float numbers of your 
 # choosing and outputs the result to the screen.
+# NOTE:  using large floats, or using too precise a value for `precision` will
+# give a `SystemStackError`
 
-def square(num, precision = 0.001, candidate = 1)
+def square(num, precision = 0.01, candidate = 1)
   difference = num - (candidate * candidate) 
   return candidate.round(2) if difference < precision
   return square(num, precision, candidate + precision) 

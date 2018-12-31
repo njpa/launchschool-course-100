@@ -1,7 +1,7 @@
 # conditional while loop
 x = 0 
 
-while x < 100
+while x < 50
   if x % 10 == 0
     puts x
   end 
@@ -12,7 +12,7 @@ end
 
 y = 0
 
-while y < 100
+while y < 50
   if y == 3
     y += 1
     next
