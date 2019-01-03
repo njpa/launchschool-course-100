@@ -1,30 +1,19 @@
-# You run the following code...
+# Write a program that iterates over an array and builds a new array 
+# that is the result of incrementing each value in the original array 
+# by a value of 2. You should have two arrays at the end of this program, 
+# The original array and the new array you've created. 
+# Print both arrays to the screen using the `p` method instead of `puts`.
 
-names = ['bob', 'joe', 'susan', 'margaret']
-names['margaret'] = 'jody'
+arr = [1, 2, 4, 5, 6, 7, 8, 9, 10]
 
-# and get the following error message:
-=begin
-TypeError: no implicit conversion of String into Integer
-  from (irb):2:in `[]='
-  from (irb):2
-  from /Users/username/.rvm/rubies/ruby-2.0.0-p353/bin/irb:12:in `<main>'
-=end
+# We can use the `map` method:
+incremented_arr = arr.map { |x| x + 2 }
 
-#What is the problem and how can it be fixed?
+# Likewise, we can use the `each` method and append the elements to the new 
+# array using the 'shovel operator'
+incremented_arr = []
+arr.each { |x| incremented_arr << x + 2 }
 
-# We could infer from these two lines of code that we wish to make the 
-# object currently equal to "margaret" in the names array equal to "jody"
-# Line two attemtps to reassign the object equal to "margaret" to "jody"
-# via reference assignment.  However, element reference only works with 
-# either an int or a regular expression.  Since we are providing neither, 
-# and instead are providing # a string, Ruby will throw a TypeError.
-
-# We could fix this by first finding out the index number of the slot in which 
-# the object "margaret" exists, and then reassign that object 
-# using the obtained index number:
-
-index_number = names.index('margaret') 
-names[index_number] = "jody"
-p names
+p arr
+p incremented_arr
 
