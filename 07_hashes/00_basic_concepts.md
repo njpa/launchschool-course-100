@@ -59,4 +59,3 @@ The `to_a` method returns an array version of a hash.  It is non-destructive.
 The `keys` and `values` methods can retrieve all of the keys, or values, of a hash.  They are returned in an array.
 
 
-
