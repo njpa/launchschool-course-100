@@ -15,5 +15,7 @@ end
 greeting("Bob")
 greeting("Bob", {time_of_day: "morning", mood: "happy"})
 greeting("Bob", {time_of_day: "afternoon", mood: "focused"})
-greeting("Bob", {time_of_day: "evening", mood: "tired"})
+
+# curly braces are not required when a hash is the last argument in a function call
+greeting("Bob", time_of_day: "evening", mood: "tired") 
 
