@@ -18,6 +18,6 @@ execute { puts "Hello there..." }
 # `block` parameter that has been passed in.
 # Line 8, is sending in a block as an argument when calling the `execute`
 # function.  The stack trace therefore starts at this line in the `<main>`.
-# Since method definitions expect parameteres to be prefixed 
-# with a `&` if they are blocks, ruby will give an ArgumentError.
+# Since method definitions expect parameteres to be preceded
+# by a `&` if they are blocks, ruby will give an ArgumentError.
 
