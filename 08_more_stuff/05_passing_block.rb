@@ -11,11 +11,11 @@ take_block { puts "block being called in this method!" }
 
 # This is a more complex example which passes an argument to the method as well.
 
-def normans_each(number, &block)
-  block.call(number)
+def square(number, &block)
+  block.call(number * number)
 end
 
 number = 33
-normans_each(number) do |num| 
-  puts "The number is: #{num}" 
+square(number) do |num| 
+  puts "The square of #{number} is #{num}" 
 end
