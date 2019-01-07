@@ -42,4 +42,27 @@ When dealing with the outside world, and when dealing with any unpredictable beh
 Ruby has an `Exception` class with the following built in reserved words for this purpose:  `begin`, `rescue`, and `end`.
 
 
+Exceptions and stack traces
+===========================
+
+Ruby has a set of built-in exceptions that come with attached message.  Here are some
+
+* StandardError
+* TypeError
+* ArgumentError
+* NoMethodError
+* RuntimeError
+* SystemCallError
+* ZeroDivisionError
+* RegexpError
+* IOError
+* EOFError
+* ThreadError
+* ScriptError
+* SyntaxError
+* LoadError
+* NotImplementedError
+* SecurityError
+
+
 
