@@ -1,7 +1,7 @@
 Hashes
 ======
 
-A hash is a data structure that stores items by associated key.  An array stores data by an ordered index.  It is created using symbols as keys and data types as values.  An item can be added to a hash by way of referencing:
+A hash is a data structure that stores items by associated key whereas an array stores data by an ordered index.  It is created using symbols as keys and data types as values.  An item can be added to a hash by way of referencing:
 
 ```ruby
 person[:nationality] = "Venezuelan"

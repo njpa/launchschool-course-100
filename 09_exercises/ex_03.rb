@@ -6,6 +6,8 @@
 
 arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
+# ANSWER
+# ======
 # We will invoke the `select` method on the `arr` array and assign the 
 # results to the `odd_numbers` variable.  We will pass in a block
 # as an argument to the `select` method which contains a comparison that will
